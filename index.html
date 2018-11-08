@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="./main.css">
+  <title>NYC Wifi Finder</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="header">
+      <h1>NYC Wifi Finder</h1>
+    </div>
+
+    <div class="search">
+      <h2>Enter Postcode</h2>
+      <form onsubmit="postcodeSubmit(event)">
+        <input type="number" name="postcode" min="1" max="99999" maxlength = "5" id="postcode"/>
+        <button type="button" onclick="search()">Search</button>
+      </form>
+    </div>
+
+    <div class="results_container">
+
+      <h2 id="resultsQueryHeader">Search to View Wifi Hotspots</h2>
+
+      <div class="results" id="results">
+
+      </div>
+    </div>
+
+  </div>
+
+  <script type="text/javascript" src="./data/nyc-wifi-hotspot-locations.js"></script>
+  <script type="text/javascript" src="./utils/nearestWifi.js"></script>
+</body>
+
+</html>

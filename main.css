@@ -1,0 +1,142 @@
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  background-color: #f2f2f2;
+}
+
+.container {
+  display: block;
+  max-width: 800px;
+  width: 100%;
+  border: solid lightgrey 1px;
+  border-radius: 5px;
+  margin: 1rem;
+  padding: 0.5rem;
+  background-color: white;
+  overflow: hidden;
+}
+
+.header {
+  background-color: black;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  margin-top: -0.5rem;
+  padding: 1rem;
+}
+
+.header h1 {
+  color: white;
+  text-align: center;
+  font-weight: 300;
+}
+
+.search {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.search h2 {
+  text-align: center;
+  font-weight: 400;
+}
+
+.search form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.search input {
+  width: 12rem;
+  height: 2rem;
+  max-width: 100%;
+  font-size: 1rem;
+  border: solid lightgrey 1px;
+  border-radius: 5px 0 0 5px;
+  padding: 0.2rem;
+}
+
+.search button {
+  width: 6rem;
+  height: 2rem;
+  font-size: 1rem;
+  background-color: white;
+  text-decoration: none;
+  border: solid lightgrey 1px;
+  border-radius: 0 5px 5px 0;
+  -webkit-transition: background-color 0.5s; /* Safari */
+  transition: background-color 0.5s;
+}
+
+.search button:hover {
+  background-color: lightgrey;
+}
+
+.search button:active {
+  background-color: black;
+  color: white;
+}
+
+.results_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.results_container h2 {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.result {
+  max-width: 100%;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  border: solid black 1px;
+}
+
+.result_name {
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding-bottom: 0.5rem;
+}
+
+.result_location {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
